@@ -1,0 +1,27 @@
+@mixin reset(){
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@mixin listHorizontal() {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin boldUppercase() {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin center-x($percent){
+    width: $percent;
+    margin: 0 auto;
+}

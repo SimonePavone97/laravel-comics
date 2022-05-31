@@ -1,0 +1,28 @@
+#sectionLink{
+    background-color: $blue;
+    padding: 30px 0;
+
+
+    ul {
+        @include center-x(70%);
+        // Lista in flex e style-type:none
+        @include listHorizontal();
+
+        li {
+            margin: 0 10px;
+            @include flex(row, initial, center);
+
+            a {
+                @include flex(row, initial, center);
+                color: white;
+                text-transform: uppercase;
+                font-size: $f-medium;
+            }
+
+            img {
+                width: 50px;
+                margin: 0 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+#comic {
+    .img {
+        width: 20%;
+        height: 250px;
+        border: 2px solid white;
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        div{
+            padding: 2px;
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            background-color: $blue;
+            bottom: 0;
+        }
+        span{
+            position: absolute;
+            padding: 2px;
+            background-color: $blue;
+        }
+    }
+
+    #comicTop {
+        @include center-x(60%);
+        padding: 20px 0;
+
+        .button {
+            background-color: $green;
+            @include flex(row, space-between, center);
+
+        }
+
+        .price {
+            width: 70%;
+            height: 100%;
+            @include flex(row, space-between, center);
+        }
+
+        .bar-img {
+            display: flex;
+        }
+
+    }
+
+    #comicBottom {
+        background-color: $wheat;
+        padding: 20px 0;
+
+        .top {
+            @include center-x(60%);
+            @include flex(row, space-between, initial);
+
+            .talent {
+                width: 60%;
+                margin-right: 50px
+            }
+
+            .specs {
+                width: calc(40% - 50px);
+            }
+
+        }
+
+        .flex {
+            border-bottom: 1px solid grey;
+            margin: 10px 0;
+            @include flex(row, space-between, initial);
+
+            div {
+                margin: 10px 0;
+
+                span {
+                    color: $blue;
+                }
+            }
+        }
+    }
+
+    #linkBottom {
+        background-color: $wheat;
+        display: flex;
+
+        .border {
+            border: 1px solid grey;
+            display: flex;
+        }
+    }
+
+}

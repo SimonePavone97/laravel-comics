@@ -1,0 +1,371 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.jumbotron {
+  width: 100%;
+  height: 60vh;
+  background-image: url("../../../images/jumbotron.jpg");
+  background-size: cover;
+  margin-bottom: -10px;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.barra {
+  margin-bottom: -300px;
+  width: 100%;
+  height: 10vh;
+  background-color: #0282f9;
+}
+
+.button {
+  padding: 10px 50px;
+  color: white;
+}
+
+.f-grey {
+  color: grey;
+}
+
+.bluLine {
+  background-color: #0282f9;
+  padding: 10px 0px;
+}
+.bluLine div {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: initial;
+}
+.bluLine div p {
+  font-size: 0.7rem;
+  color: white;
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+
+.header {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header ul {
+  padding-top: 35px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.header ul li {
+  cursor: pointer;
+  margin: 0 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: initial;
+}
+.header ul li a {
+  font-size: 0.7rem;
+  color: black;
+  text-decoration: none;
+}
+.header ul li:hover a {
+  color: #0282f9;
+}
+.header ul li:hover .bar {
+  background-color: #0282f9;
+}
+.header input {
+  border: none;
+  border-bottom: 2px solid #0282f9;
+}
+.header input::-moz-placeholder {
+  color: black;
+  text-align: right;
+}
+.header input:-ms-input-placeholder {
+  color: black;
+  text-align: right;
+}
+.header input::placeholder {
+  color: black;
+  text-align: right;
+}
+
+.bar {
+  width: 100%;
+  height: 5px;
+}
+
+.p-yb-30 {
+  padding-bottom: 30px;
+}
+
+#sectionLink {
+  background-color: #0282f9;
+  padding: 30px 0;
+}
+#sectionLink ul {
+  width: 70%;
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+#sectionLink ul li {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+#sectionLink ul li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+#sectionLink ul li img {
+  width: 50px;
+  margin: 0 10px;
+}
+
+#footerTop {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+}
+#footerTop .block-sin {
+  padding-bottom: 10px;
+}
+#footerTop .block-sin .listLinks {
+  display: flex;
+}
+#footerTop .block-sin .listLinks div {
+  margin-right: 50px;
+}
+#footerTop .block-sin .listLinks div ul {
+  margin: 20px 0;
+  text-align: left;
+}
+#footerTop .block-sin .listLinks div ul h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+#footerTop .block-sin .listLinks div ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  text-align: left;
+}
+#footerTop .block-sin .listLinks div ul li a {
+  font-size: 0.7rem;
+  color: grey;
+  margin-bottom: 5px;
+}
+#footerTop .block-sin .listLinks div ul li a:hover {
+  text-decoration: underline;
+}
+#footerTop .block-sin p {
+  font-size: 0.7rem;
+  color: grey;
+}
+#footerTop .block-sin p span {
+  color: #0282f9;
+  cursor: pointer;
+}
+#footerTop .block-sin p span:hover {
+  text-decoration: underline;
+}
+#footerTop .bg-logo {
+  width: 50%;
+  background-image: url("../../../images/dc-logo-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#footerBottom {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+#footerBottom .button {
+  border: 3px solid #0282f9;
+  cursor: pointer;
+}
+#footerBottom .button div {
+  text-transform: uppercase;
+  padding: 10px;
+  color: white;
+}
+#footerBottom .block-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+#footerBottom .block-right div {
+  margin: 0 10px;
+  cursor: pointer;
+}
+#footerBottom .block-right div span {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0282f9;
+}
+
+.footerTop {
+  background-image: url("../../../images/footer-bg.jpg");
+}
+
+.footerBottom {
+  background-color: #303030;
+}
+
+main #comics {
+  width: 70%;
+  margin: 0 auto;
+}
+main #comics .contenitore {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+main #comics .contenitore .movie {
+  width: calc(16.6666666667% - 10px);
+  margin: 20px 5px;
+}
+main #comics .contenitore .movie .bg-movie {
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 1;
+  margin: 10px 0;
+}
+main #comics .contenitore .movie p {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+main #comics .button {
+  background-color: #0282f9;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+#comic .img {
+  width: 20%;
+  height: 250px;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#comic .img div {
+  padding: 2px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  background-color: #0282f9;
+  bottom: 0;
+}
+#comic .img span {
+  position: absolute;
+  padding: 2px;
+  background-color: #0282f9;
+}
+#comic #comicTop {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+#comic #comicTop .button {
+  background-color: #55ba59;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#comic #comicTop .price {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#comic #comicTop .bar-img {
+  display: flex;
+}
+#comic #comicBottom {
+  background-color: #f6f6f6;
+  padding: 20px 0;
+}
+#comic #comicBottom .top {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: initial;
+}
+#comic #comicBottom .top .talent {
+  width: 60%;
+  margin-right: 50px;
+}
+#comic #comicBottom .top .specs {
+  width: calc(40% - 50px);
+}
+#comic #comicBottom .flex {
+  border-bottom: 1px solid grey;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: initial;
+}
+#comic #comicBottom .flex div {
+  margin: 10px 0;
+}
+#comic #comicBottom .flex div span {
+  color: #0282f9;
+}
+#comic #linkBottom {
+  background-color: #f6f6f6;
+  display: flex;
+}
+#comic #linkBottom .border {
+  border: 1px solid grey;
+  display: flex;
+}

@@ -1,0 +1,105 @@
+#footerTop {
+    @include center-x(70%);
+    display: flex;
+
+    .block-sin {
+        padding-bottom: 10px;
+
+        .listLinks {
+            display: flex;
+
+            div {
+                margin-right: 50px;
+
+                ul {
+                    margin: 20px 0;
+                    text-align: left;
+
+                    h3 {
+                        color: white;
+                        margin-bottom: 15px;
+                    }
+
+                    li {
+                        @include flex(column, initial, initial);
+                        text-align: left;
+
+                        a {
+                            font-size: $f-small;
+                            color: grey;
+                            margin-bottom: 5px;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+        p {
+            font-size: $f-small;
+            color: grey;
+
+            span{
+                color: $blue;
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .bg-logo {
+        width: 50%;
+        background-image: url('../../../images/dc-logo-bg.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}
+
+#footerBottom {
+    @include center-x(70%);
+    @include flex(row, space-between, center);
+    padding: 20px 0;
+
+
+    .button {
+        border: 3px solid $blue;
+        cursor: pointer;
+
+        div {
+            text-transform: uppercase;
+            padding: 10px;
+            color: white
+        }
+    }
+
+    .block-right {
+        @include flex(row, initial, center);
+
+        div {
+            margin: 0 10px;
+            cursor: pointer;
+
+            span {
+                @include boldUppercase();
+                color: $blue;
+            }
+        }
+    }
+}
+
+.footerTop {
+    background-image: url('../../../images/footer-bg.jpg')
+}
+
+.footerBottom {
+    background-color: $footerBottom;
+}
